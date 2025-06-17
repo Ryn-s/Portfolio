@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>Compétence 1 – Administrer les réseaux et l’Internet</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script defer src="js/script.js"></script>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container flex-between">
+      <h1 class="logo">Rayan SAOUD</h1>
+      <nav class="main-nav">
+        <a href="index.html">Accueil</a>
+        <a href="index.html#competences" class="active">Compétences</a>
+      </nav>
+      <button id="theme-toggle" aria-label="Changer le thème">🌙</button>
+    </div>
+  </header>
+
+  <main class="container py-2">
+    <!-- FIL D'ARIANE -->
+    <nav class="breadcrumb mb-2">
+      <a href="index.html">Accueil</a> ›
+      <a href="index.html#competences">Compétences</a> ›
+      <span>Compétence 1</span>
+    </nav>
+
+    <!-- TITRE -->
+    <section class="mb-1">
+      <h2 class="section-title">🚀 Compétence 1 : Administrer les réseaux et l’Internet</h2>
+      <p class="subtitle"><em>Niveau 1 : Assister l’administrateur réseaux</em></p>
+      <p>Être capable de participer activement à la configuration, la maintenance et la sécurisation d’infrastructures réseau.</p>
+    </section>
+
+    <!-- AC / CE -->
+    <section class="grid-2 gap-2 mb-2">
+      <div class="card">
+        <h3 class="card-title">🔍 Apprentissages Critiques (AC)</h3>
+        <ul class="list-icon">
+          <li>AC11.01 | Maîtriser les lois de l’électricité pour intervenir sur le matériel réseau.</li>
+          <li>AC11.02 | Comprendre architecture, codage et protocoles Internet.</li>
+          <li>AC11.03 | Configurer les fonctions de base d’un LAN (switch, VLAN).</li>
+          <li>AC11.04 | Gérer les OS serveurs et clients pour l’administration réseau.</li>
+          <li>AC11.05 | Diagnostiquer et signaler les pannes réseau.</li>
+          <li>AC11.06 | Installer un poste client et expliquer la démarche.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3 class="card-title">🛠 Composantes Essentielles (CE)</h3>
+        <ul class="list-icon">
+          <li>CE1.01 | Choisir les solutions et technologies adaptées.</li>
+          <li>CE1.02 | Appliquer les bonnes pratiques de sécurité informatique.</li>
+          <li>CE1.03 | Adopter une démarche méthodique pour résoudre les pannes.</li>
+          <li>CE1.04 | Respecter les normes et procédures métiers.</li>
+          <li>CE1.05 | Assurer une veille technologique permanente.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Situations pro -->
+    <section class="mb-2">
+      <h3 class="section-subtitle">🏢 Situations Professionnelles</h3>
+      <div class="card">
+        <ul class="list-icon">
+          <li>Conception et administration d’infrastructure réseau d’entreprise.</li>
+          <li>Installation et gestion de services réseau (DHCP, DNS, LDAP).</li>
+          <li>Support et déploiement de solutions fixe et mobile pour clients.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- SAÉ -->
+    <section class="mb-2">
+      <h3 class="section-subtitle">📚 SAÉ liées à cette compétence</h3>
+
+      <!-- SAÉ 1.02 -->
+      <div class="card sae-card mb-1">
+        <h4 class="sae-title">1.02 : S’initier aux réseaux informatiques</h4>
+        <p><strong>Description :</strong> Laboratoire EVE-NG – VLAN, routeur & commutateur Cisco, serveur DHCP.</p>
+        <details class="sae-details">
+          <summary>Voir l’analyse réflexive</summary>
+          <ul class="sae-list">
+            <li><strong>Réussites :</strong> Topologie configurée, ping/traceroute OK.</li>
+            <li><strong>Difficultés :</strong> Import d’images, NAT console.</li>
+            <li><strong>Progression :</strong> Automatisation Ansible, inter-VLAN routing.</li>
+            <li><strong>AC validés :</strong> AC11.02, AC11.03, AC11.04</li>
+            <li><strong>CE validées :</strong> CE1.01, CE1.02, CE1.05</li>
+            <li><strong>Preuves :</strong> Captures EVE-NG, exports running-config, logs ICMP.</li>
+          </ul>
+        </details>
+      </div>
+
+      <!-- SAÉ 2.01 -->
+      <div class="card sae-card">
+        <h4 class="sae-title">2.01 : Construire un réseau</h4>
+        <p><strong>Description :</strong> Topologie RT13 sur GNS3 – VLAN multiples, VLSM, STP multi-lien, ACL, services FTP/HTTP.</p>
+        <details class="sae-details">
+          <summary>Voir l’analyse réflexive</summary>
+          <ul class="sae-list">
+            <li><strong>Réussites :</strong> Segmentation VLSM, trunking stable, services déployés.</li>
+            <li><strong>Difficultés :</strong> Calcul VLSM, ACL avancées, STP sync.</li>
+            <li><strong>Progression :</strong> Automatisation Ansible, QoS, VPN.</li>
+            <li><strong>AC validés :</strong> AC11.01, AC11.02, AC11.03, AC11.05</li>
+            <li><strong>CE validées :</strong> CE1.01, CE1.02, CE1.03, CE1.04</li>
+            <li><strong>Preuves :</strong> Diagramme GNS3, captures VLAN/ACL, logs FTP/HTTP.</li>
+          </ul>
+        </details>
+      </div>
+    </section>
+
+    <!-- PAGINATION -->
+    <nav class="pagination flex-between">
+      <a href="index.html#competences" class="btn-small">← Retour</a>
+      <a href="competence2.html" class="btn-small">Compétence 2 →</a>
+    </nav>
+  </main>
+
+</body>
+</html>

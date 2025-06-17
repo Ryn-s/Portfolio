@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Compétence 2 – Connecter entreprises et usagers</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/script.js"></script>
+</head>
+<body>
+  <!-- Header commun -->
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo">Rayan SAOUD</h1>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="competences.html">Compétences</a></li>
+        </ul>
+      </nav>
+      <button id="theme-toggle" aria-label="Changer le thème">🌙</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Fil d’Ariane -->
+    <nav class="breadcrumb">
+      <a href="index.html">Accueil</a>
+      <span class="separator">›</span>
+      <a href="competences.html">Compétences</a>
+      <span class="separator">›</span>
+      <span>Compétence 2</span>
+    </nav>
+
+    <!-- Titre et intro -->
+    <section class="hero-block">
+      <h2>Compétence 2 : Connecter entreprises et usagers</h2>
+      <p class="intro">
+        <em>Déployer, mesurer et analyser les systèmes de transmission et de communication.</em><br>
+        Mise en place et maintenance des infrastructures physiques et logiques permettant la communication.
+      </p>
+    </section>
+
+    <!-- Apprentissages & Composantes -->
+    <section class="grid-2 gap-2rem">
+      <div class="card">
+        <h3>🛠 Apprentissages Critiques (AC)</h3>
+        <ul>
+          <li>AC12.01 | Mesurer, analyser et commenter les signaux</li>
+          <li>AC12.02 | Caractériser des systèmes de transmission élémentaires</li>
+          <li>AC12.03 | Déployer des supports (câblage, fibre, Wi-Fi)</li>
+          <li>AC12.04 | Configurer des systèmes ToIP</li>
+          <li>AC12.05 | Communiquer et adapter son discours</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>🔧 Composantes Essentielles (CE)</h3>
+        <ul>
+          <li>CE2.01 | Communiquer avec les acteurs, parfois en anglais</li>
+          <li>CE2.02 | Démarche scientifique rigoureuse</li>
+          <li>CE2.03 | Choisir technologies adaptées</li>
+          <li>CE2.04 | Solutions respectueuses de l’environnement</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Situations Professionnelles -->
+    <section class="card full-width mt-4">
+      <h3>💼 Situations Professionnelles Associées</h3>
+      <ul>
+        <li>Déploiement des supports et systèmes de transmission</li>
+        <li>Administration d’équipements d’accès fixe ou mobile</li>
+        <li>Déploiement d’accès sans fil pour l’entreprise</li>
+        <li>Administration de systèmes de communication unifiés</li>
+      </ul>
+    </section>
+
+    <!-- SAÉ en blocs -->
+    <section class="sae-section mt-6">
+      <h3>📚 SAÉ liées à la Compétence 2</h3>
+      <div class="sae-grid">
+        <!-- SAÉ 1.03 -->
+        <article class="sae-card">
+          <header>
+            <h4>SAÉ 1.03 : Découvrir un dispositif de transmission</h4>
+          </header>
+          <div class="sae-content">
+            <p><strong>Description :</strong> Mise en place d’un lien point-à-point Wi-Fi dans Packet Tracer, configuration des antennes virtuelles et mesure de la qualité (RSSI, débit). Documents de topologie et dimensionnement validés.</p>
+            <h5>🖋️ Analyse réflexive</h5>
+            <ul>
+              <li><strong>Réussites :</strong> Simulation rapide et export de courbes RSSI.</li>
+              <li><strong>Difficultés :</strong> Ajustement des paramètres d’antenne pour optimiser la portée.</li>
+              <li><strong>Marge de progression :</strong> Tester un outil professionnel comme Ekahau.</li>
+            </ul>
+            <h5>✅ Validation</h5>
+            <ul>
+              <li><strong>AC validés :</strong> AC12.01, AC12.03</li>
+              <li><strong>CE validées :</strong> CE2.02, CE2.03</li>
+              <li><strong>Preuves :</strong> Captures de simulation, rapport PDF.</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- SAÉ 2.02 -->
+        <article class="sae-card">
+          <header>
+            <h4>SAÉ 2.02 : Mesurer et caractériser un signal ou un système</h4>
+          </header>
+          <div class="sae-content">
+            <p><strong>Description :</strong> Prototype de Web Radio sous ESP32 + codec VS1053 : tests de débit audio, latence de streaming et qualité MP3/AAC. Analyse spectrale pour caractériser la bande passante.</p>
+            <h5>🖋️ Analyse réflexive</h5>
+            <ul>
+              <li><strong>Réussites :</strong> Diffusion stable, prise en charge de plusieurs flux.</li>
+              <li><strong>Difficultés :</strong> Réglage fin du codec pour éliminer les artefacts sonores.</li>
+              <li><strong>Marge de progression :</strong> Automatiser les mesures via script Python.</li>
+            </ul>
+            <h5>✅ Validation</h5>
+            <ul>
+              <li><strong>AC validés :</strong> AC12.01, AC12.04, AC12.05</li>
+              <li><strong>CE validées :</strong> CE2.02, CE2.03, CE2.04</li>
+              <li><strong>Preuves :</strong> Graphiques de mesure, code source commenté.</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+
+      <!-- Pagination -->
+      <nav class="pagination mt-6">
+        <a href="competence1.html" class="btn-small">← Compétence 1</a>
+        <a href="competences.html" class="btn-small">Retour aux compétences</a>
+        <a href="competence3.html" class="btn-small">Compétence 3 →</a>
+      </nav>
+    </section>
+  </main>
+
+  <!-- Footer commun -->
+  <footer class="site-footer mt-8">
+    <div class="container">
+      <p>© 2025 Portfolio – Rayan SAOUD. Tous droits réservés.</p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Compétence 3 – Créer des outils & applications | Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/script.js"></script>
+</head>
+<body>
+  <!-- Header commun -->
+  <header>
+    <div class="container">
+      <h1>Rayan SAOUD</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="index.html#competences">Compétences</a></li>
+        </ul>
+      </nav>
+      <button id="theme-toggle" aria-label="Changer le thème">🌙</button>
+    </div>
+  </header>
+
+  <main class="container section">
+    <!-- Fil d’ariane -->
+    <nav class="breadcrumb">
+      <a href="index.html">Accueil</a> ›
+      <a href="index.html#competences">Compétences</a> ›
+      <span>Compétence 3</span>
+    </nav>
+
+    <h2>🚀 Compétence 3 : Créer des outils & applications informatiques pour les R&T</h2>
+    <p><em>Développer des solutions logicielles pour répondre aux besoins des réseaux & télécommunications.</em></p>
+
+    <!-- Bloc AC & CE côte à côte -->
+    <div class="grid-2-cols gap">
+      <!-- Apprentissages Critiques -->
+      <div class="card light">
+        <h3>🛠 Apprentissages Critiques (AC)</h3>
+        <ul>
+          <li>AC13.01 | Utiliser un système informatique et ses outils</li>
+          <li>AC13.02 | Lire, exécuter, corriger et modifier un programme</li>
+          <li>AC13.03 | Traduire un algorithme dans un langage donné</li>
+          <li>AC13.04 | Connaître l’architecture et les technologies d’un site Web</li>
+          <li>AC13.05 | Choisir les mécanismes de gestion de données adaptés</li>
+          <li>AC13.06 | S’intégrer dans un environnement collaboratif</li>
+        </ul>
+      </div>
+      <!-- Composantes Essentielles -->
+      <div class="card light">
+        <h3>🔧 Composantes Essentielles (CE)</h3>
+        <ul>
+          <li>CE3.01 | Être à l’écoute des besoins du client</li>
+          <li>CE3.02 | Documenter le travail réalisé</li>
+          <li>CE3.03 | Utiliser les outils numériques à bon escient</li>
+          <li>CE3.04 | Choisir les outils de développement adaptés</li>
+          <li>CE3.05 | Intégrer les problématiques de sécurité</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Situations pro -->
+    <div class="card light">
+      <h3>📂 Situations Professionnelles Associées</h3>
+      <ul>
+        <li>Conception, déploiement et maintenance du SI d’une entreprise</li>
+        <li>Automatisation du déploiement et de la maintenance des outils</li>
+        <li>Développement d’outils informatiques pour usage interne</li>
+      </ul>
+    </div>
+
+    <!-- SAÉ intégrées -->
+    <section class="sae-section">
+      <h3>📑 SAÉ liées à la Compétence 3</h3>
+
+      <!-- SAÉ 1.05 -->
+      <div class="card">
+        <h4>SAÉ 1.05 : Traiter les données</h4>
+        <p><strong>Objectif :</strong> Créer un outil de reporting pour localiser les gros fichiers d’un disque (top 100).</p>
+        <ul class="sae-detail">
+          <li><strong>Description :</strong> Développement d’un script Python + PowerShell :
+            <ul>
+              <li>Sélection du répertoire via PyQt5</li>
+              <li>Analyse récursive (pathlib) et tri des fichiers</li>
+              <li>Export JSON des 100 plus gros et génération d’un camembert</li>
+              <li>Interface graphique multi-onglets (camembert, légendes, IHM)</li>
+            </ul>
+          </li>
+          <li><strong>Réussites :</strong> Outil stable, export JSON et graphique opérationnel.</li>
+          <li><strong>Difficultés :</strong> Gestion du « \ » sous Windows, pagination des légendes.</li>
+          <li><strong>Marge de progression :</strong> Ajouter export CSV et filtrage en interface.</li>
+          <li><strong>Validation :</strong> ✅ Tous les AC & CE requis validés.</li>
+          <li><strong>AC validés :</strong> AC13.01, AC13.02, AC13.06</li>
+          <li><strong>CE validées :</strong> CE3.02, CE3.03, CE3.05</li>
+          <li><strong>Preuves :</strong> Code Python, captures d’écran du camembert, script PowerShell.</li>
+        </ul>
+      </div>
+
+      <!-- SAÉ 2.03 -->
+      <div class="card">
+        <h4>SAÉ 2.03 : Mettre en place une solution informatique pour l’entreprise</h4>
+        <p><strong>Objectif :</strong> Concevoir et déployer un site web CRUD pour gérer une ludothèque.</p>
+        <ul class="sae-detail">
+          <li><strong>Description :</strong>
+            <ul>
+              <li>Installation d’une VM Linux + serveur web (Apache/Nginx) et SGBD (MySQL)</li>
+              <li>Création d’une base de données (catégories, jeux, auteurs, joueurs, commentaires)</li>
+              <li>Développement d’un site PHP/Flask/Django permettant CRUD (CRUD jeux, joueurs, commentaires)</li>
+              <li>Import de jeux via fichier, calcul de statistiques (moyennes, max/min)</li>
+              <li>Collaboration GitHub, Gantt, procédures et livrables en anglais/français</li>
+            </ul>
+          </li>
+          <li><strong>Réussites :</strong> Architecture LAMP fonctionnelle, interface utilisateur conviviale.</li>
+          <li><strong>Difficultés :</strong> Sécurisation de la saisie utilisateur et gestion des fichiers uploads.</li>
+          <li><strong>Marge de progression :</strong> Implémenter API REST et tests unitaires.</li>
+          <li><strong>Validation :</strong> ✅ Tous les AC & CE requis validés.</li>
+          <li><strong>AC validés :</strong> AC13.01, AC13.03, AC13.04, AC13.05</li>
+          <li><strong>CE validées :</strong> CE3.01, CE3.02, CE3.04</li>
+          <li><strong>Preuves :</strong> Repo GitHub, diagramme de Gantt, captures écran du CRUD.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Navigation -->
+    <div class="pagination">
+      <a href="competence2.html" class="btn">← Compétence 2</a>
+      <a href="index.html#competences" class="btn">Retour aux compétences</a>
+      <a href="competence1.html" class="btn">Compétence 1 ←</a>
+    </div>
+  </main>
+
+  <!-- Footer commun -->
+  <footer class="container">
+    <p>© 2025 Portfolio • Rayan SAOUD</p>
+  </footer>
+</body>
+</html>
