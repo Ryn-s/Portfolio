@@ -96,46 +96,93 @@
       </div>
 
       <!-- SAÉ 2.03 -->
-      <div class="card">
+      <div class="card sae-card" id="sae2-03">
         <h4>SAÉ 2.03 : Mettre en place une solution Système d’Information</h4>
         <p><strong>Objectif :</strong> Déployer un site web CRUD pour gérer une ludothèque.</p>
-        <ul class="sae-detail">
-          <li><strong>Description :</strong>
-            <ul>
-              <li>VM Linux + Apache/Nginx + MySQL</li>
-              <li>Base de données : catégories, jeux, auteurs, joueurs, commentaires</li>
-              <li>Site PHP (ou Flask/Django) CRUD + import via fichier</li>
-              <li>Statistiques (moyennes, max/min) et interface conviviale</li>
-              <li>Livrables : Gantt, procédures, repo GitHub</li>
-            </ul>
-          </li>
-          <li><strong>Réussites :</strong> Architecture LAMP fonctionnelle, UI fluide.</li>
-          <li><strong>Difficultés :</strong> Sécurisation des uploads et des formulaires.</li>
-          <li><strong>Marge de progression :</strong> Ajouter API REST et tests unitaires.</li>
-          <li><strong>Validation :</strong>  Tous les AC & CE requis validés.</li>
-          <li><strong>AC validés :</strong> AC13.01, AC13.03, AC13.04, AC13.05</li>
-          <li><strong>CE validées :</strong> CE3.01, CE3.02, CE3.04</li>
-          <li><strong>Preuves :</strong> Repo GitHub, Gantt, captures CRUD.</li>
-        </ul>
-        <p><strong>Dépôt GitHub :</strong>
-          <a href="https://github.com/Ryn-s/SAE23_Ludotheque" target="_blank">
-            github.com/Ryn-s/SAE23_Ludotheque
-          </a>
-        </p>
-        <div class="card summary-en">
-          <h5>English Summary</h5>
-          <p>
-            Our small team deployed a game-library web app on a Linux VM, set up MySQL and a PHP/Flask site with CRUD for games, users, comments.  
-            We automated imports, computed statistics, and collaborated via GitHub.
-          </p>
-        </div>
-        <div class="card feedback">
-          <h5>Retour d’expérience</h5>
+
+        <!-- Ressources mobilisées -->
+        <div class="sae-block">
+          <h5>📚 Ressources mobilisées</h5>
           <ul>
-            <li><strong>Plu :</strong> Déploiement complet sur VM et rédaction de la procédure.</li>
-            <li><strong>Déplu :</strong> Conflits Git fréquents.</li>
-            
+            <li>R107 : Fondamentaux de la programmation</li>
+            <li>R108 : Bases des systèmes d’exploitation</li>
+            <li>R109 : Introduction aux technologies web</li>
+            <li>R207 : Sources de données</li>
+            <li>R208 : Traitement des données</li>
+            <li>R209 : Initiation au développement web</li>
+            <li>R210 : Anglais</li>
+            <li>R211 : Expression et communication</li>
+            <li>R212 : PPP</li>
+            <li>R213 : Mathématiques des systèmes numériques</li>
           </ul>
+        </div>
+
+        <!-- Concepts mis en œuvre -->
+        <div class="sae-block">
+          <h5>🔧 Concepts mis en œuvre</h5>
+          <ul>
+            <li>Virtualisation et configuration d’une VM Linux</li>
+            <li>Installation et sécurisation d’un serveur web (Apache/Nginx)</li>
+            <li>Conception d’un schéma de base de données relationnelle (MySQL)</li>
+            <li>Développement d’une interface CRUD avec un framework web</li>
+            <li>Gestion des uploads et sessions utilisateur</li>
+            <li>Implémentation de contrôles d’accès et validation formulaires</li>
+            <li>Collaboration Git/GitHub et gestion de projet (Gantt)</li>
+          </ul>
+        </div>
+
+        <!-- Apprentissages Critiques -->
+        <div class="sae-block">
+          <h5>🎯 Apprentissages Critiques (AC) validés</h5>
+          <ul>
+            <li>AC0311 : Utiliser un système informatique et ses outils</li>
+            <li>AC0312 : Lire, exécuter, corriger et modifier un programme</li>
+            <li>AC0313 : Traduire un algorithme dans un langage et pour un environnement</li>
+            <li>AC0314 : Connaître l’architecture et les technologies d’un site Web</li>
+            <li>AC0315 : Choisir les mécanismes de gestion de données adaptés</li>
+            <li>AC0316 : S’intégrer dans un environnement collaboratif</li>
+          </ul>
+        </div>
+
+        <!-- Déroulé du projet -->
+        <div class="sae-block">
+          <h5>📝 Déroulé du projet</h5>
+          <ol>
+            <li>Initialisation du dépôt Git et diagramme de Gantt.</li>
+            <li>Provisionnement d’une VM Linux et installation LAMP.</li>
+            <li>Modélisation DB (Merise) et création de la base.</li>
+            <li>Développement back-end CRUD et front-end HTML/CSS/JS.</li>
+            <li>Import de jeux via CSV et automatisation du parsing.</li>
+            <li>Tests fonctionnels et sécurité (sanitization, permissions).</li>
+            <li>Rédaction de la procédure d’installation et du rapport.</li>
+          </ol>
+        </div>
+
+        <!-- Lien dépôt, résumé anglais et feedback -->
+        <div class="sae-block">
+          <p><strong>📂 Dépôt GitHub :</strong> 
+            <a href="https://github.com/Ryn-s/SAE23_Ludotheque" target="_blank">
+              github.com/Ryn-s/SAE23_Ludotheque
+            </a>
+          </p>
+          <div class="card summary-en">
+            <h5>English Summary</h5>
+            <p>
+                  We provisioned two Linux virtual machines—one hosting the database server (MySQL) 
+    and one hosting the web server (Nginx + Gunicorn).  
+    On these VMs we developed a web application to manage a board‐game library, 
+    implemented full CRUD operations, CSV file imports, and computed statistics 
+    (average ratings, top/bottom comments), collaborating throughout on GitHub.
+            </p>
+          </div>
+          <div class="card feedback">
+            <h5>Retour d’expérience</h5>
+            <ul>
+              <li><strong>Ce que j’ai aimé :</strong> Déploiement complet sur VM et rédaction de la procédure.</li>
+              <li><strong>Ce qui m’a déplu :</strong> Conflits Git fréquents sans conventions claires.</li>
+              <li><strong>Ce qui m’a manqué :</strong> Outil de suivi des tickets (Jira) pour mieux organiser.</li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
@@ -150,7 +197,7 @@
 
   <!-- Footer commun -->
   <footer class="container">
-    <p> 2025 Portfolio • Rayan SAOUD</p>
+    <p>© 2025 Portfolio • Rayan SAOUD</p>
   </footer>
 </body>
 </html>
