@@ -33,9 +33,8 @@
     <h2>🚀 Compétence 3 : Créer des outils & applications informatiques pour les R&T</h2>
     <p><em>Développer des solutions logicielles pour répondre aux besoins des réseaux & télécommunications.</em></p>
 
-    <!-- Bloc AC & CE côte à côte -->
+    <!-- Apprentissages Critiques & Composantes Essentielles -->
     <div class="grid-2-cols gap">
-      <!-- Apprentissages Critiques -->
       <div class="card light">
         <h3>🛠 Apprentissages Critiques (AC)</h3>
         <ul>
@@ -47,7 +46,6 @@
           <li>AC13.06 | S’intégrer dans un environnement collaboratif</li>
         </ul>
       </div>
-      <!-- Composantes Essentielles -->
       <div class="card light">
         <h3>🔧 Composantes Essentielles (CE)</h3>
         <ul>
@@ -60,7 +58,7 @@
       </div>
     </div>
 
-    <!-- Situations pro -->
+    <!-- Situations professionnelles associées -->
     <div class="card light">
       <h3>📂 Situations Professionnelles Associées</h3>
       <ul>
@@ -77,62 +75,82 @@
       <!-- SAÉ 1.05 -->
       <div class="card">
         <h4>SAÉ 1.05 : Traiter les données</h4>
-        <p><strong>Objectif :</strong> Créer un outil de reporting pour localiser les gros fichiers d’un disque (top 100).</p>
         <ul class="sae-detail">
-          <li><strong>Description :</strong> Développement d’un script Python + PowerShell :
+          <li><strong>Objectif :</strong> Créer un outil de reporting pour localiser les 100 plus gros fichiers d’un disque.</li>
+          <li><strong>Description :</strong>
             <ul>
+              <li>Script Python + PowerShell</li>
               <li>Sélection du répertoire via PyQt5</li>
-              <li>Analyse récursive (pathlib) et tri des fichiers</li>
-              <li>Export JSON des 100 plus gros et génération d’un camembert</li>
-              <li>Interface graphique multi-onglets (camembert, légendes, IHM)</li>
+              <li>Analyse (pathlib), export JSON, génération de camembert</li>
+              <li>IHM multi-onglets (camembert, légendes)</li>
             </ul>
           </li>
-          <li><strong>Réussites :</strong> Outil stable, export JSON et graphique opérationnel.</li>
-          <li><strong>Difficultés :</strong> Gestion du « \ » sous Windows, pagination des légendes.</li>
-          <li><strong>Marge de progression :</strong> Ajouter export CSV et filtrage en interface.</li>
+          <li><strong>Réussites :</strong> Outil stable, export JSON opérationnel, graphique fonctionnel.</li>
+          <li><strong>Difficultés :</strong> Gestion du séparateur « \ » sous Windows, pagination des légendes.</li>
+          <li><strong>Marge de progression :</strong> Ajouter export CSV et filtres dynamiques.</li>
           <li><strong>Validation :</strong> ✅ Tous les AC & CE requis validés.</li>
           <li><strong>AC validés :</strong> AC13.01, AC13.02, AC13.06</li>
           <li><strong>CE validées :</strong> CE3.02, CE3.03, CE3.05</li>
-          <li><strong>Preuves :</strong> Code Python, captures d’écran du camembert, script PowerShell.</li>
+          <li><strong>Preuves :</strong> Code Python, captures d’écran, script PowerShell.</li>
         </ul>
       </div>
 
       <!-- SAÉ 2.03 -->
       <div class="card">
-        <h4>SAÉ 2.03 : Mettre en place une solution informatique pour l’entreprise</h4>
-        <p><strong>Objectif :</strong> Concevoir et déployer un site web CRUD pour gérer une ludothèque.</p>
+        <h4>SAÉ 2.03 : Mettre en place une solution Système d’Information</h4>
+        <p><strong>Objectif :</strong> Déployer un site web CRUD pour gérer une ludothèque.</p>
         <ul class="sae-detail">
           <li><strong>Description :</strong>
             <ul>
-              <li>Installation d’une VM Linux + serveur web (Apache/Nginx) et SGBD (MySQL)</li>
-              <li>Création d’une base de données (catégories, jeux, auteurs, joueurs, commentaires)</li>
-              <li>Développement d’un site PHP/Flask/Django permettant CRUD (CRUD jeux, joueurs, commentaires)</li>
-              <li>Import de jeux via fichier, calcul de statistiques (moyennes, max/min)</li>
-              <li>Collaboration GitHub, Gantt, procédures et livrables en anglais/français</li>
+              <li>VM Linux + Apache/Nginx + MySQL</li>
+              <li>Base de données : catégories, jeux, auteurs, joueurs, commentaires</li>
+              <li>Site PHP (ou Flask/Django) CRUD + import via fichier</li>
+              <li>Statistiques (moyennes, max/min) et interface conviviale</li>
+              <li>Livrables : Gantt, procédures, repo GitHub</li>
             </ul>
           </li>
-          <li><strong>Réussites :</strong> Architecture LAMP fonctionnelle, interface utilisateur conviviale.</li>
-          <li><strong>Difficultés :</strong> Sécurisation de la saisie utilisateur et gestion des fichiers uploads.</li>
-          <li><strong>Marge de progression :</strong> Implémenter API REST et tests unitaires.</li>
-          <li><strong>Validation :</strong> ✅ Tous les AC & CE requis validés.</li>
+          <li><strong>Réussites :</strong> Architecture LAMP fonctionnelle, UI fluide.</li>
+          <li><strong>Difficultés :</strong> Sécurisation des uploads et des formulaires.</li>
+          <li><strong>Marge de progression :</strong> Ajouter API REST et tests unitaires.</li>
+          <li><strong>Validation :</strong>  Tous les AC & CE requis validés.</li>
           <li><strong>AC validés :</strong> AC13.01, AC13.03, AC13.04, AC13.05</li>
           <li><strong>CE validées :</strong> CE3.01, CE3.02, CE3.04</li>
-          <li><strong>Preuves :</strong> Repo GitHub, diagramme de Gantt, captures écran du CRUD.</li>
+          <li><strong>Preuves :</strong> Repo GitHub, Gantt, captures CRUD.</li>
         </ul>
+        <p><strong>Dépôt GitHub :</strong>
+          <a href="https://github.com/Ryn-s/SAE23_Ludotheque" target="_blank">
+            github.com/Ryn-s/SAE23_Ludotheque
+          </a>
+        </p>
+        <div class="card summary-en">
+          <h5>English Summary</h5>
+          <p>
+            Our small team deployed a game-library web app on a Linux VM, set up MySQL and a PHP/Flask site with CRUD for games, users, comments.  
+            We automated imports, computed statistics, and collaborated via GitHub.
+          </p>
+        </div>
+        <div class="card feedback">
+          <h5>Retour d’expérience</h5>
+          <ul>
+            <li><strong>Plu :</strong> Déploiement complet sur VM et rédaction de la procédure.</li>
+            <li><strong>Déplu :</strong> Conflits Git fréquents.</li>
+            
+          </ul>
+        </div>
       </div>
     </section>
 
-    <!-- Navigation -->
+    <!-- Pagination -->
     <div class="pagination">
       <a href="competence2.html" class="btn">← Compétence 2</a>
       <a href="index.html#competences" class="btn">Retour aux compétences</a>
-      <a href="competence1.html" class="btn">Compétence 1 ←</a>
+      <a href="competence1.html" class="btn">Compétence 1 →</a>
     </div>
   </main>
 
   <!-- Footer commun -->
   <footer class="container">
-    <p>© 2025 Portfolio • Rayan SAOUD</p>
+    <p> 2025 Portfolio • Rayan SAOUD</p>
   </footer>
 </body>
 </html>
